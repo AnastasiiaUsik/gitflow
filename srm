@@ -1,11 +1,11 @@
 #!/bin/bash
 #
 
-i="~/RECYCLE"
+R="~/RECYCLE"
 
-if [ -e "$i" ]
+if [ -e $R ]
 then
-        echo "yes"
+        echo $R существует
 else
         mkdir ~/RECYCLE
 fi
