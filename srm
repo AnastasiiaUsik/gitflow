@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+
+i="~/RECYCLE"
+
+if [ -e "$i" ]
+then
+        echo "yes"
+else
+        touch RECYCLE
+fi
