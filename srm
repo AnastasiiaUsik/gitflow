@@ -1,9 +1,12 @@
 #!/bin/bash
 #
 
+echo "Что удалить?"
+read DELETE
+
 R="~/RECYCLE"
 
 if [ ! -e $R ]
 then
-        mkdir ~/RECYCLE
+        mkdir ~/RECYCLE; mv $DELETE ~/RECYCLE/$DELETE
 fi
