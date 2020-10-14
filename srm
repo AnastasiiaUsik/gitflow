@@ -5,7 +5,7 @@ R="~/RECYCLE"
 
 if [ -e $R ]
 then
-        echo $R существует
+        echo "$R существует"
 else
         mkdir ~/RECYCLE
 fi
