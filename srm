@@ -7,5 +7,5 @@ if [ -e "$i" ]
 then
         echo "yes"
 else
-        touch RECYCLE
+        mkdir ~/RECYCLE
 fi
