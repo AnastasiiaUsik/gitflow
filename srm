@@ -9,4 +9,6 @@ R="~/RECYCLE"
 if [ ! -e $R ]
 then
         mkdir ~/RECYCLE; mv $DELETE ~/RECYCLE/$DELETE
+else
+        mv $DELETE ~/RECYCLE/$DELETE
 fi
