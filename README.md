@@ -51,4 +51,5 @@ cd ~/gitflow
 cp srm ~/bin/srm
 ```
 
+
 Done! Now you can use the command `srm`. It will save files you delete to RECYCLE and automate delete after 7 days.
