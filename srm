@@ -1,14 +1,14 @@
 #!/bin/bash
 #
 
-echo "Что удалить?"
-read DELETE
+if [ -e $1 ]
 
-R="~/RECYCLE"
-
-if [ ! -e $R ]
 then
-        mkdir ~/RECYCLE; mv $DELETE ~/RECYCLE/$DELETE
+
+gzip $1 | mkdir -p  ~/RECYCLE/; mv $1.gz ~/RECYCLE/$1.gz | find ~/RECYCLE/ -atime +7 -delete 
+
 else
-        mv $DELETE ~/RECYCLE/$DELETE
+
+echo 'Файла с таким названием нет'
+
 fi
